@@ -45,7 +45,7 @@ Then request ``http://localhost:8081/quotes/1``
    http://localhost:8081/quotes/1
    ```
 
-5. And buyer client will generate a factor by using the random message of user5, and this factor will be **encrypted by oblivious transfer cryptosystem**. In this case, the factor is encrypted by public key at first, and xor the random message of user5.
+5. And buyer client will generate a random factor, and this factor will be **encrypted by oblivious transfer cryptosystem**. In this case, the factor is encrypted by public key at first, and xor the random message of user5.
 
    ![image-20200728115550254](./images/factor-generated-by-buyer.png)
 
