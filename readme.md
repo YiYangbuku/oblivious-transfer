@@ -45,13 +45,13 @@ Then request ``http://localhost:8081/quotes/5``
    http://localhost:8081/quotes/5
    ```
 
-5. And buyer client will generate a random factor, and this factor will be **encrypted by oblivious transfer cryptosystem**. In this case, the factor is encrypted by public key at first, and xor the random message of user5. Then buyer sends this factor server, but will **not tell server which seller this factor belongs to**.
+5. And buyer client will generate a random factor, and this factor will be **encrypted by oblivious transfer cryptosystem**. In this case, the factor is encrypted by public key at first, and xor the random message of user5. Then the buyer sends this factor to server, but will **not tell server which seller this factor belongs to**.
 
    ![image-20200728115550254](./images/factor-generated-by-buyer.png)
 
    ![image-20200728133821854](./images/search-factor.png)
 
-6. When server receives the factory, it **cannot know which seller is searched**. So server will **decrypt by oblivious transfer cryptosystem** to get factors for all sellers. (Only the factor for user5 is correct, but the server doesn't know.) In this case, the server xor the encrypted factor with each random message of seller, and then decrypt with its private key.
+6. When the server receives the factor, it **cannot know which seller is searched**. So server will **decrypt by oblivious transfer cryptosystem** to get factors for all sellers. (Only the factor for user5 is correct, but the server doesn't know.) In this case, the server xor the encrypted factor with each random message of seller, and then decrypt with its private key.
 
    ![image-20200728134046780](./images/receive-factor.png)
 
