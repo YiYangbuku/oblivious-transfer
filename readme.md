@@ -14,7 +14,7 @@ Go to ``./oblivious-transfer-client``, run
 ./gradlew bootrun
 ```
 
-Then request ``http://localhost:8081/quotes/1``
+Then request ``http://localhost:8081/quotes/5``
 
 ### Demo description
 
@@ -42,7 +42,7 @@ Then request ``http://localhost:8081/quotes/1``
 4. Then the buyer can ask the price of one seller, e.g., user5. 
 
    ```bash
-   http://localhost:8081/quotes/1
+   http://localhost:8081/quotes/5
    ```
 
 5. And buyer client will generate a random factor, and this factor will be **encrypted by oblivious transfer cryptosystem**. In this case, the factor is encrypted by public key at first, and xor the random message of user5.
