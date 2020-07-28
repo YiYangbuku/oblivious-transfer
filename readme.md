@@ -25,6 +25,8 @@ Then request ``http://localhost:8081/quotes/5``
 3. A buyer wants to get the price of a specific seller, but he doesn't want to expose which seller's price he is asking.
 4. Server only want to return the requested price, but not all. 
 
+![oblivious transfer](./images/oblivious-transfer.png)
+
 ##### How to protect both buyer and seller privacy in this demo
 
 1.  when server is starting, all prices are generated. 
