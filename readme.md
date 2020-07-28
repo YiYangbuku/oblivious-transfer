@@ -49,7 +49,7 @@ Then request ``http://localhost:8081/quotes/1``
 
    ![image-20200728115550254](./images/factor-generated-by-buyer.png)
 
-6. Then buyer sends this factor server, but will not tell server which seller this factor belong to. So server will **decrypt by oblivious transfer cryptosystem** to get factors for all sellers. (Only the factor for user5 is correctly, but the server don't know.) In this case, the server xor the encrypted factor with each random message of seller, and then decrypt with its private key.
+6. Then buyer sends this factor server, but will not tell server which seller this factor belongs to. So server will **decrypt by oblivious transfer cryptosystem** to get factors for all sellers. (Only the factor for user5 is correct, but the server doesn't know.) In this case, the server xor the encrypted factor with each random message of seller, and then decrypt with its private key.
 
    ![image-20200728115931111](./images/factors-calculate-by-server.png)
 
