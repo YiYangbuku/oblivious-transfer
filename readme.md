@@ -49,11 +49,11 @@ Then request ``http://localhost:8081/quotes/5``
 
    ![image-20200728115550254](./images/factor-generated-by-buyer.png)
 
-   ![image-20200728133821854](/Users/yiyang/Documents/code/oblivious-transfer/images/search-factor.png)
+   ![image-20200728133821854](./images/search-factor.png)
 
 6. When server receives the factory, it **cannot know which seller is searched**. So server will **decrypt by oblivious transfer cryptosystem** to get factors for all sellers. (Only the factor for user5 is correct, but the server doesn't know.) In this case, the server xor the encrypted factor with each random message of seller, and then decrypt with its private key.
 
-   ![image-20200728134046780](/Users/yiyang/Documents/code/oblivious-transfer/images/receive-factor.png)
+   ![image-20200728134046780](./images/receive-factor.png)
 
    ![image-20200728115931111](./images/factors-calculate-by-server.png)
 
