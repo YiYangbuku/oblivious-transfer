@@ -71,4 +71,4 @@ Then request ``http://localhost:8081/quotes/5``
 
 1. A has some coupons, A want to give only one of them to B, B doesn't want A know which one he actual got.
 2. A is a online hospital appointment system, B wants to make an appointment, B don't want to expose his appointment detail to A. 
-3. A has credit reportings for some person, B wants to query one persion's credit reporting, B doesn't want A to know which person he is querying.
+3. A has credit reports for some persons, B wants to query one person's credit reporting, B doesn't want A to know which person he is querying.
